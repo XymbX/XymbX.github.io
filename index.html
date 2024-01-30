@@ -3,42 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xymb_</title>
+    <title>Xymb</title>
     <style>
         body {
             background-color: black;
             color: white;
-            font-family: 'Courier New', monospace;
+            font-family: 'Helvetica', sans-serif;
             text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
             margin: 0;
-            overflow: hidden;
         }
 
-        #prompt {
-            display: inline-block;
-            white-space: nowrap;
-            overflow: hidden;
-            border-right: 1px solid white;
-            animation: typing 3s steps(12) 1s forwards, blink-caret 1s infinite;
-        }
-
-        @keyframes typing {
-            from {
-                width: 0;
-            }
-            to {
-                width: 8ch; /* adjust based on the length of your text */
-            }
-        }
-
-        @keyframes blink-caret {
-            50% {
-                border-color: transparent;
-            }
+        h1 {
+            font-size: 3em;
         }
     </style>
 </head>
 <body>
-    <div id="prompt">Xymb_</div>
+    <h1>Xymb</h1>
 </body>
 </html>
