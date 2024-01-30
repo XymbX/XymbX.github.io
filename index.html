@@ -3,26 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xymb</title>
+    <title>Xymb_</title>
     <style>
         body {
             background-color: black;
             color: white;
-            font-family: 'Helvetica', sans-serif;
+            font-family: 'Courier New', monospace;
             text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
             margin: 0;
+            overflow: hidden;
         }
 
-        h1 {
-            font-size: 3em;
+        #prompt {
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 1px solid white;
+            animation: typing 3s steps(12) 1s forwards, blink-caret 1s infinite;
+        }
+
+        #downloads {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 10px;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 8ch; /* adjust based on the length of your text */
+            }
+        }
+
+        @keyframes blink-caret {
+            50% {
+                border-color: transparent;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Xymb</h1>
+    <div id="prompt">Xymb_</div>
+    <div id="downloads">
+        <div>line1: <a href="#">Lethal Company repack (NEW)</a></div>
+        <div>line2: <a href="#">XX</a></div>
+        <!-- Repeat the above two lines for additional items -->
+        <!-- Example for three more lines -->
+        <div>line3: <a href="#">Another Game Title</a></div>
+        <div>line4: <a href="#">Yet Another Game Title</a></div>
+        <div>line5: <a href="#">And One More Game Title</a></div>
+    </div>
 </body>
 </html>
